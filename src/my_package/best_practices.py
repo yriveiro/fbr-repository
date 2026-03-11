@@ -1,10 +1,7 @@
 import random
 
 
-def calculate(x, y, z):  # Poor naming: what does it calculate?
-    # Long function with multiple responsibilities
-    # No type hints
-    # Magic numbers
+def calculate(x, y, z):
     if x > 100:
         x = x * 2
     else:
@@ -15,22 +12,20 @@ def calculate(x, y, z):  # Poor naming: what does it calculate?
     return result
 
 
-def process_data(data):  # Vague name
-    # No documentation
-    # Nested loops without clarity
+def process_data(data):
     processed = []
     for item in data:
         if item > 0:
-            for i in range(5):  # Magic number
+            for i in range(5):
                 item = item + i
             processed.append(item)
     return processed
 
 
-class MyClass:  # Poor class naming
+class MyClass:
     def __init__(self):
-        self.a = 1  # Poor attribute naming
+        self.a = 1
         self.b = 2
 
-    def do_something(self):  # Vague method name
+    def do_something(self):
         return self.a + self.b
